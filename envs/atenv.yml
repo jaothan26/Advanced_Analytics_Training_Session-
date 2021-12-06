@@ -1,0 +1,41 @@
+name: atenv
+# This is an exemplary environment to use with conda.
+# Channels are distribution centers that decribe the origin of package
+# Dependencies list the relevant packages to download into the environment
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python basics
+  - python>=3.7
+  - ipython
+  - pip
+  - wheel
+  - nb_conda
+
+  # Data Formats
+  - numpy=1.17.1
+  - pandas=0.25.1
+  - hdf5=1.8.20
+  - jsonschema=3.0.2
+  - python-dateutil=2.8.0
+  - sqlite=3.29.0
+  - pickleshare=0.7.5
+
+  # Visualization
+  - matplotlib=3.1.1
+  - seaborn=0.9.0
+
+  # Data Science
+  - scikit-learn=0.21.3
+  - statsmodels=0.10.1
+
+  # Image Analytics and deep learning
+  - tensorflow==1.14.0
+  - tensorboard==1.14.0
+  - keras==2.3.1
+  - pip:
+      #Add pip requirements
+      - opencv-python
+      - keras-rectified-adam=0.17.0
+      - keract==2.8.4
